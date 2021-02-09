@@ -1,0 +1,27 @@
+﻿@model Section1
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h3>@Model.Header</h3>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Header">Header</label>
+        <input type="text" name="Header" class="form-control" value="@Model.Header" id="Header" placeholder="Header">
+    </div>
+    <div class="form-group">
+        <label for="SubHeader">Sub Header</label>
+        <input type="text" name="SubHeader" class="form-control"  value="@Model.SubHeader" id="SubHeader" placeholder="Sub Header">
+    </div>
+    <div class="form-group">
+        <label for="WorkArea">Work Area</label>
+        <input type="text" name="WorkArea" class="form-control" id="WorkArea"  value="@Model.WorkArea" placeholder="Work Area">
+    </div>
+    <div class="form-group">
+        <label for="Photo">Photo</label>
+        <input type="file" name="Photo" class="form-control" id="Photo">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
